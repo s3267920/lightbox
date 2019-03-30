@@ -12,7 +12,6 @@
     imgList.push(el.style.backgroundImage);
   });
   contentImgList.addEventListener('click', e => {
-    console.log(e.target.dataset.index);
     if (e.target && e.target.className === 'img_box') {
       currentImg = e.target.dataset.index;
       modalHandle(e.target.dataset.index);
@@ -21,11 +20,11 @@
   });
   function modalHandle(dataIndex, way = true) {
     if (way) {
-      if (dataIndex === imgList.length) return;
+      if (dataIndex === imgList.length) currentNum.textContent = 1;
       else currentNum.textContent = Number(dataIndex) + 1;
     } else if (!way) {
-      if (dataIndex === 1) return;
-      else currentNum.textContent = Number(dataIndex) - 1;
+      if (dataIndex === 1) currentNum.textContent = 6;
+      else currentNum.textContent = imgList.length;
     }
     modalImgBox.style.backgroundImage = imgList[Number(currentNum.textContent) - 1];
     totalNum.textContent = `/${imgList.length}`;
@@ -36,7 +35,6 @@
         modal.style.display = 'none';
         break;
       case 'fas fa-chevron-right':
-        console.log(Number(currentNum.textContent));
         modalHandle(Number(currentNum.textContent));
         break;
       case 'fas fa-chevron-left':
@@ -46,5 +44,4 @@
         break;
     }
   });
-  // modalHandle();
 })();
