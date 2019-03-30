@@ -699,7 +699,6 @@ main .content li:hover .img_box {
 }
 
 main .modal {
-  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -842,6 +841,7 @@ main .modal .modal_img_toggle_box {
 main .modal .modal_img_toggle_box .left_icon,
 main .modal .modal_img_toggle_box .right_icon,
 main .modal .modal_img_toggle_box .close_icon {
+  cursor: pointer;
   width: 48px;
   height: 48px;
   display: -webkit-inline-box;

@@ -144,7 +144,6 @@ main {
     }
   }
   .modal {
-    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -228,6 +227,7 @@ main {
       .left_icon,
       .right_icon,
       .close_icon {
+        cursor: pointer;
         width: 48px;
         height: 48px;
         display: inline-flex;
