@@ -3,10 +3,119 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>LightBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+      integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/regular.css"
+      integrity="sha384-FKw7x8fCxuvzBwOJmhTJJsKzBl8dnN9e2R4+pXRfYoHivikuHkzWyhKWDSMcGNK8"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/lightbox.min.css" />
   </head>
-  <body></body>
+  <!-- https://unsplash.com/collections/4519642/fox/e2034e3bfee50048b2e35fd2ac221f61 
+  
+  【特定技術】不可用 JS 框架，只能單純用原生 JS。
+
+  【特定技術】需符合響應式設計，什麼你說設計稿沒提供？嗯，你是勇者嘛，通靈什麻的一定略懂略懂嘍
+
+  【特定技術】當螢幕伸縮(resize)時，介面與 JS 功能也需正常
+  -->
+  <body>
+    <header></header>
+    <main>
+      <div class="title">
+        <span></span>
+        <h1>
+          <span>fox</span>
+          <p>everywhere</p>
+        </h1>
+      </div>
+      <div class="content">
+        <ul>
+          <a href="javascript:;">
+            <li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1540153448870-af780343526e?w=800)"
+              ></div></li
+          ></a>
+          <a href="javascript:;"
+            ><li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1505259839540-04105fcd8ba3?w=800)"
+              ></div></li
+          ></a>
+          <a href="javascript:;"
+            ><li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1501707305551-9b2adda5e527?w=800)"
+              ></div></li
+          ></a>
+          <a href="javascript:;"
+            ><li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1551725301-5183dc1dbb83?w=800)"
+              ></div></li
+          ></a>
+          <a href="javascript:;"
+            ><li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1522162363424-d29ded2ad958?w=800)"
+              ></div></li
+          ></a>
+          <a href="javascript:;"
+            ><li>
+              <div
+                class="img_box"
+                style="background-image: url(https://images.unsplash.com/photo-1442522772768-9032b6d10e3e?w=800)"
+              ></div></li
+          ></a>
+        </ul>
+      </div>
+      <div class="modal">
+        <div class="modal_content">
+          <div class="modal_text_content">
+            <div class="number">
+              <span class="current_img_num">1</span>
+              <span class="total_img_num">/6</span>
+            </div>
+            <div class="word">
+              Have you ever seen the cute fox before?
+              <p class="author">—Erik Mclean</p>
+            </div>
+          </div>
+          <div
+            class="modal_img_toggle_box"
+            style="background-image: url(https://images.unsplash.com/photo-1540153448870-af780343526e?w=800)"
+          >
+            <a class="close_icon" href="javascript:;"
+              ><i class="fas fa-times-circle"></i> <i class="far fa-times-circle" style="display: none"></i
+            ></a>
+            <a href="javascript:;" class="left_icon"><i class="fas fa-chevron-left"></i></a>
+            <a href="javascript:;" class="right_icon"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/lightbox.js"></script>
+  </body>
 </html>
