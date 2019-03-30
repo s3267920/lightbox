@@ -610,6 +610,7 @@ main .title h1 {
 
 main .title h1 span,
 main .title h1 p {
+  cursor: default;
   width: 70px;
   border-left: 4px solid #000;
 }
