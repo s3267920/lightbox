@@ -6,18 +6,9 @@
     <title>LightBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
-      integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
-      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./style/lightbox.min.css" />
   </head>
   <!-- https://unsplash.com/collections/4519642/fox/e2034e3bfee50048b2e35fd2ac221f61 
@@ -29,7 +20,18 @@
   【特定技術】當螢幕伸縮(resize)時，介面與 JS 功能也需正常
   -->
   <body>
-    <header></header>
+      <header>
+          <nav>
+            <ul>
+              <a href="../" class="onPage">
+                <li>原生JS版本</li>
+              </a>
+              <a href="./html/lightboxVue.html">
+                <li>Vue版本</li>
+              </a>
+            </ul>
+          </nav>
+        </header>
     <main>
       <div class="title">
         <span></span>
@@ -109,7 +111,9 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="https://github.com/s3267920/Calculator/tree/master"> <i class="fab fa-github github_icon"></i></a>
+      </footer>
     <script src="./js/lightbox.js"></script>
   </body>
 </html>

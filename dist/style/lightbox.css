@@ -475,6 +475,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -483,6 +487,68 @@ body {
           align-items: center;
   min-width: 500px;
   font-family: Open Sans;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 69px;
+  margin: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+header nav ul a li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  line-height: 40px;
+  color: #fff;
+}
+
+header nav ul a li:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+header nav ul .onPage {
+  border-bottom: 5px solid #fff;
 }
 
 main {
@@ -847,5 +913,30 @@ main .modal .modal_img_toggle_box .left_icon {
 main .modal .modal_img_toggle_box .right_icon {
   top: 45%;
   right: 0;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+footer .github_icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 36px;
+}
+
+footer .github_icon:hover {
+  font-size: 42px;
 }
 /*# sourceMappingURL=lightbox.css.map */
