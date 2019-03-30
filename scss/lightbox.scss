@@ -1,9 +1,13 @@
 @import '_reset.scss';
 
 $colors: (
+  color_gray: (
+    main: #cbcbcb
+  ),
   other: (
     black: #000,
     white: #fff,
+    white30: rgba(255, 255, 255, 0.3),
     black90: rgba(0, 0, 0, 0.9)
   )
 );
@@ -24,7 +28,6 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  // flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
@@ -194,22 +197,30 @@ main {
         position: absolute;
         font-size: 30px;
         text-decoration: none;
-        .fas,
-        .far {
+        .fas {
           color: color(other, white);
+          transition: transform 0.5s;
+          &:hover {
+            transform: scale(1.2);
+          }
         }
-      }
-      .close_icon {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: -2px;
-        top: -2px;
         .fa-times-circle {
           text-shadow: 4px 2px 5px color(other, black90);
         }
+        .fa-chevron-right,
+        .fa-chevron-left {
+          color: color(other, white30);
+          &:hover {
+            color: color(other, white);
+            transform: scale(1.2);
+          }
+        }
       }
+      .close_icon {
+        right: -2px;
+        top: -2px;
+      }
+
       .left_icon {
         top: 45%;
       }

@@ -793,31 +793,51 @@ main .modal .modal_img_toggle_box .close_icon {
 }
 
 main .modal .modal_img_toggle_box .left_icon .fas,
-main .modal .modal_img_toggle_box .left_icon .far,
 main .modal .modal_img_toggle_box .right_icon .fas,
-main .modal .modal_img_toggle_box .right_icon .far,
-main .modal .modal_img_toggle_box .close_icon .fas,
-main .modal .modal_img_toggle_box .close_icon .far {
+main .modal .modal_img_toggle_box .close_icon .fas {
   color: #fff;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main .modal .modal_img_toggle_box .left_icon .fas:hover,
+main .modal .modal_img_toggle_box .right_icon .fas:hover,
+main .modal .modal_img_toggle_box .close_icon .fas:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .modal .modal_img_toggle_box .left_icon .fa-times-circle,
+main .modal .modal_img_toggle_box .right_icon .fa-times-circle,
+main .modal .modal_img_toggle_box .close_icon .fa-times-circle {
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+main .modal .modal_img_toggle_box .left_icon .fa-chevron-right,
+main .modal .modal_img_toggle_box .left_icon .fa-chevron-left,
+main .modal .modal_img_toggle_box .right_icon .fa-chevron-right,
+main .modal .modal_img_toggle_box .right_icon .fa-chevron-left,
+main .modal .modal_img_toggle_box .close_icon .fa-chevron-right,
+main .modal .modal_img_toggle_box .close_icon .fa-chevron-left {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+main .modal .modal_img_toggle_box .left_icon .fa-chevron-right:hover,
+main .modal .modal_img_toggle_box .left_icon .fa-chevron-left:hover,
+main .modal .modal_img_toggle_box .right_icon .fa-chevron-right:hover,
+main .modal .modal_img_toggle_box .right_icon .fa-chevron-left:hover,
+main .modal .modal_img_toggle_box .close_icon .fa-chevron-right:hover,
+main .modal .modal_img_toggle_box .close_icon .fa-chevron-left:hover {
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main .modal .modal_img_toggle_box .close_icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
   right: -2px;
   top: -2px;
-}
-
-main .modal .modal_img_toggle_box .close_icon .fa-times-circle {
-  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 main .modal .modal_img_toggle_box .left_icon {
