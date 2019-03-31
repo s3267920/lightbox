@@ -23,12 +23,12 @@
       <header>
           <nav>
             <ul>
-              <a href="../" >
-                <li>原生JS版本</li>
-              </a>
-              <a href="./lightboxVue.html" class="onPage">
-                <li>Vue版本</li>
-              </a>
+                <li >
+                  <a href="../" >原生JS版本</a>
+                </li>
+                <li class="onPage"> 
+                  <a href="./lightboxVue.html">Vue版本</a> 
+                </li>
             </ul>
           </nav>
         </header>
@@ -42,14 +42,14 @@
       </div>
       <div class="content">
         <ul id="content_img_list">
-          <a href.prevent v-for="img in imgList" :key="img.id" >
-            <li>
-              <div
-                class="img_box" 
-                :style="{backgroundImage:`url(${img.src})`}" @click="modalDisplay=true"
-              ></div>
-            </li>
+          <li v-for="img in imgList" :key="img.id" >
+              <a href.prevent >
+            <div
+              class="img_box" 
+              :style="{backgroundImage:`url(${img.src})`}" @click="modalDisplay=true"
+            ></div>
           </a>
+          </li>
         </ul>
       </div>
       <div class="modal" v-if="modalDisplay">

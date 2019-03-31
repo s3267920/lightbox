@@ -509,7 +509,7 @@ header nav ul {
   display: flex;
 }
 
-header nav ul a {
+header nav ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -519,29 +519,30 @@ header nav ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 69px;
-  margin: 0 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0 5px;
+  height: 69px;
+}
+
+header nav ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0 10px;
   text-decoration: none;
 }
 
-header nav ul a li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
-  line-height: 40px;
-  color: #fff;
-}
-
-header nav ul a li:hover {
+header nav ul li a:hover {
   background-color: #fff;
   color: #000;
   border-radius: 10px;
@@ -573,7 +574,6 @@ main {
 }
 
 main .title {
-  width: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,12 +593,13 @@ main .title > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 160px;
+  width: 100%;
   height: 16px;
   background-color: #000;
 }
 
 main .title h1 {
+  line-height: 100%;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -611,7 +612,6 @@ main .title h1 {
 main .title h1 span,
 main .title h1 p {
   cursor: default;
-  width: 70px;
   border-left: 4px solid #000;
 }
 
@@ -626,7 +626,7 @@ main .title h1 span {
 }
 
 main .title h1 p {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 main .content {
@@ -672,6 +672,13 @@ main .content li {
   transition: -webkit-box-shadow 1s;
   transition: box-shadow 1s;
   transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+main .content li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
 }
 
 main .content li .img_box {
